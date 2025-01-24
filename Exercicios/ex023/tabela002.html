@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th{
+             border: 1px solid black;
+             padding: 10px;
+        }
+
+        thead > tr > th{  /* Para fazer o cabeçalho descer junto com a rolagem da tela.*/
+            position: sticky;
+            top: 0;
+            background-color: gray ;
+
+        }
+
+        tbody > tr:nth-child(odd) /* 2n-1 para impar*/{
+            background-color: lightgreen;
+        }
+
+        tbody > tr:nth-child(even) /*2n para par*/{
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+
+        th.pop{
+            width: 100px;
+        }
+
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+      ANATOMIA PARA TABELAS GRANDES
+         TABLE
+           CAPTION
+           THEAD
+             TR, TD, TH.
+           TBODY
+             TR, TD, TH.
+           TFOOT 
+             TR, TD, TH.
+     -->
+
+     <table>
+        <caption>População das Regiões Federativas</caption>
+        <thead>
+             <tr>
+                <th scope="col">Região</th>
+                <th scope="col" class="pop">População</th>
+             </tr>
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td>Centro-Oetse</td>
+                <td class="num">16 289 538</td>
+            </tr>
+
+            <tr>
+                <td>Sudeste</td>
+                <td class="num">84 840 113</td>
+            </tr>
+
+            <tr>
+                <td>Sul</td>
+                <td class="num">29 937 706</td>
+            </tr>
+
+            <tr>
+                <td>Norte</td>
+                <td class="num">17 354 884</td>
+            </tr>
+
+            <tr>
+                <td>Nordeste</td>
+                <td class="num">54 658 515</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">203 080 756</td>
+            </tr>
+        </tfoot>
+     </table>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis itaque assumenda inventore deleniti, dolorum deserunt repellendus placeat nemo ex libero minus doloremque. Ad veritatis commodi quibusdam totam dicta dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde reprehenderit non, rerum accusantium officiis, magnam aspernatur vitae eum sint beatae soluta officia aliquam ipsum dolorem praesentium dignissimos nobis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit veniam animi aut amet iure, voluptates deleniti aspernatur nulla ipsum numquam fugiat fuga eum pariatur nemo cum quam cumque? Quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit in nostrum esse similique, facilis harum corporis? Vero quis debitis autem reprehenderit quod praesentium est veniam accusamus, beatae cumque, similique quo!</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis itaque assumenda inventore deleniti, dolorum deserunt repellendus placeat nemo ex libero minus doloremque. Ad veritatis commodi quibusdam totam dicta dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde reprehenderit non, rerum accusantium officiis, magnam aspernatur vitae eum sint beatae soluta officia aliquam ipsum dolorem praesentium dignissimos nobis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit veniam animi aut amet iure, voluptates deleniti aspernatur nulla ipsum numquam fugiat fuga eum pariatur nemo cum quam cumque? Quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit in nostrum esse similique, facilis harum corporis? Vero quis debitis autem reprehenderit quod praesentium est veniam accusamus, beatae cumque, similique quo!</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis itaque assumenda inventore deleniti, dolorum deserunt repellendus placeat nemo ex libero minus doloremque. Ad veritatis commodi quibusdam totam dicta dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde reprehenderit non, rerum accusantium officiis, magnam aspernatur vitae eum sint beatae soluta officia aliquam ipsum dolorem praesentium dignissimos nobis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit veniam animi aut amet iure, voluptates deleniti aspernatur nulla ipsum numquam fugiat fuga eum pariatur nemo cum quam cumque? Quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit in nostrum esse similique, facilis harum corporis? Vero quis debitis autem reprehenderit quod praesentium est veniam accusamus, beatae cumque, similique quo!</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis itaque assumenda inventore deleniti, dolorum deserunt repellendus placeat nemo ex libero minus doloremque. Ad veritatis commodi quibusdam totam dicta dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde reprehenderit non, rerum accusantium officiis, magnam aspernatur vitae eum sint beatae soluta officia aliquam ipsum dolorem praesentium dignissimos nobis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit veniam animi aut amet iure, voluptates deleniti aspernatur nulla ipsum numquam fugiat fuga eum pariatur nemo cum quam cumque? Quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit in nostrum esse similique, facilis harum corporis? Vero quis debitis autem reprehenderit quod praesentium est veniam accusamus, beatae cumque, similique quo!</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis itaque assumenda inventore deleniti, dolorum deserunt repellendus placeat nemo ex libero minus doloremque. Ad veritatis commodi quibusdam totam dicta dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde reprehenderit non, rerum accusantium officiis, magnam aspernatur vitae eum sint beatae soluta officia aliquam ipsum dolorem praesentium dignissimos nobis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit veniam animi aut amet iure, voluptates deleniti aspernatur nulla ipsum numquam fugiat fuga eum pariatur nemo cum quam cumque? Quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit in nostrum esse similique, facilis harum corporis? Vero quis debitis autem reprehenderit quod praesentium est veniam accusamus, beatae cumque, similique quo!</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, debitis itaque assumenda inventore deleniti, dolorum deserunt repellendus placeat nemo ex libero minus doloremque. Ad veritatis commodi quibusdam totam dicta dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde reprehenderit non, rerum accusantium officiis, magnam aspernatur vitae eum sint beatae soluta officia aliquam ipsum dolorem praesentium dignissimos nobis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit veniam animi aut amet iure, voluptates deleniti aspernatur nulla ipsum numquam fugiat fuga eum pariatur nemo cum quam cumque? Quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit in nostrum esse similique, facilis harum corporis? Vero quis debitis autem reprehenderit quod praesentium est veniam accusamus, beatae cumque, similique quo!</p>
+</body>
+</html>
